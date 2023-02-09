@@ -17,7 +17,7 @@
 # решение 1: ручной ввод
 
 i = 0
-n = int(input('В ведите количество кустов n в диапазоне от 3 до 1000: '))
+n = int(input('Введите количество кустов n в диапазоне от 3 до 1000: '))
 while (n <= 3 or n >= 1000):
     print('Вы ввели число вне заданного диапазона! Введите заного!\n ')
     n = int(input('В ведите количество кустов n в диапазоне от 3 до 1000: '))
@@ -41,7 +41,7 @@ for i in range(n-1):
     
     else:
         sum = bushBerry[i-1] + bushBerry[i]+ bushBerry[i+1]
-        print(i+1, ' заход модуля. Максимальный урожай равен: ', bushBerry[i-1], ' + ', bushBerry[i], ' + ', bushBerry[i+1], ' = ', sum)
+        print(i+1, ' заход модуля. Урожай равен: ', bushBerry[i-1], ' + ', bushBerry[i], ' + ', bushBerry[i+1], ' = ', sum)
 
     if ((bushBerry[i-2] + bushBerry[i-1]+ bushBerry[i]) >= maxSum):
         maxSum = bushBerry[i-2] + bushBerry[i-1]+ bushBerry[i]
