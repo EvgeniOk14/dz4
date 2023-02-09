@@ -37,7 +37,7 @@ for i in range(n-1):
     
     else:
         sum = bushBerry[i-1] + bushBerry[i]+ bushBerry[i+1]
-        print(i+1, ' заход модуля. Максимальный урожай равен: ', bushBerry[i-1], ' + ', bushBerry[i], ' + ', bushBerry[i+1], ' = ', sum)
+        print(i+1, ' заход модуля. Урожай равен: ', bushBerry[i-1], ' + ', bushBerry[i], ' + ', bushBerry[i+1], ' = ', sum)
 
     if ((bushBerry[i-2] + bushBerry[i-1]+ bushBerry[i]) >= maxSum):
         maxSum = bushBerry[i-2] + bushBerry[i-1]+ bushBerry[i]
